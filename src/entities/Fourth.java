@@ -14,11 +14,12 @@ import java.util.List;
 public class Fourth extends Apartment{
     private String quart;
     
+    
     public Fourth(){
         super();
     }
-    public Fourth(String verants,String pincing,List<Fourth> listFourth,List<Owner> listOwner,String quart){
-        super(verants, pincing, listFourth, listOwner);
+    public Fourth(Integer balcony,List<Fourth> listFourth,List<Owner> listOwner,String quart){
+        super(balcony, listFourth, listOwner);
         this.quart = quart;
     }
     public String getQuart(){

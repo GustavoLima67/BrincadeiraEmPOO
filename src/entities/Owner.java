@@ -41,7 +41,7 @@ public class Owner {
     }
     @Override
     public String toString(){
-        return "Name: "+name+", Age: "+age+", Salary range: "+salaryRange;
+        return "Name: "+name+", Age: "+age+", Salary range: "+String.format("%.2f%n ",salaryRange);
     }
     
 }

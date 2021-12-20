@@ -13,27 +13,25 @@ import java.util.List;
  * @author Gustavo
  */
 public class Apartment {
-    private String verants;
-    private String pincing;
+    private Integer balcony;
     private List<Fourth> listFourth = new ArrayList<>();
     private List<Owner> listOwner = new ArrayList<>();
     
     public Apartment(){
     }
-    public Apartment(String verants,String pincing,List<Fourth> listFourth,List<Owner> listOwner){
-        this.verants = verants;
-        this.pincing = pincing;
+    public Apartment(Integer balcony,List<Fourth> listFourth,List<Owner> listOwner){
+        this.balcony = balcony;
         this.listFourth = listFourth;
         this.listOwner = listOwner;
     }
-    public String getVerants(){
-        return verants;
+    public Apartment(Integer balcony){
+        this.balcony = balcony ;
     }
-    public String getPincing(){
-        return pincing;
+    public Integer getBalcony(){
+        return balcony;
     }
-    public void setPincing(String pincing){
-        this.pincing = pincing;
+    public void setBalcony(Integer balcony){
+        this.balcony = balcony;
     }
     private List<Fourth> getListFourth(){
         return listFourth;
@@ -43,9 +41,6 @@ public class Apartment {
     }
     @Override
     public String toString(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Verants: ").append(verants);
-        sb.append("Pincing: ").append(pincing);
-        return sb.toString();
+        return "Balcony: "+balcony;
     }
 }
