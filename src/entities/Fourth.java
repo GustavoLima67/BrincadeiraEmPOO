@@ -11,14 +11,14 @@ import java.util.List;
  *
  * @author Gustavo
  */
-public class Quart extends Apartment{
+public class Fourth extends Apartment{
     private String quart;
     
-    public Quart(){
+    public Fourth(){
         super();
     }
-    public Quart(String verants,String pincing,String quart,List<Quart> listQuarts,List<Proprietario> listPro){
-        super(verants,pincing,listQuarts,listPro);
+    public Fourth(String verants,String pincing,List<Fourth> listFourth,List<Owner> listOwner,String quart){
+        super(verants, pincing, listFourth, listOwner);
         this.quart = quart;
     }
     public String getQuart(){
@@ -26,5 +26,9 @@ public class Quart extends Apartment{
     }
     public void setQuart(String quart){
         this.quart = quart;
+    }
+    @Override
+    public String toString(){
+        return "Quart: "+quart;
     }
 }

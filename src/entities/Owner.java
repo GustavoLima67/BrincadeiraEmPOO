@@ -9,17 +9,17 @@ package entities;
  *
  * @author Gustavo
  */
-public class Proprietario {
+public class Owner {
     private String name;
     private Integer age;
-    private Double fayxeSalary;
+    private Double salaryRange;
     
-    public Proprietario(){
+    public Owner(){
     }
-    public Proprietario(String name,Integer age,Double fayxeSalary){
+    public Owner(String name,Integer age,Double salaryRange){
         this.name = name;
         this.age = age;
-        this.fayxeSalary = fayxeSalary;
+        this.salaryRange = salaryRange;
     }
     public String getName(){
         return name;
@@ -34,11 +34,14 @@ public class Proprietario {
         this.age = age;
     }
     public Double getFayxeSalary(){
-        return fayxeSalary;
+        return salaryRange;
     }
     public void setFayxeSalary(Double fayxeSalary){
-        this.fayxeSalary = fayxeSalary;
+        this.salaryRange = fayxeSalary;
     }
-    
+    @Override
+    public String toString(){
+        return "Name: "+name+", Age: "+age+", Salary range: "+salaryRange;
+    }
     
 }
